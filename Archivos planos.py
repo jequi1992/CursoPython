@@ -1,0 +1,5 @@
+print("*******************************************")
+print("PROGRAMA QUE ABRE, LEE, IMPRIME ARCHIVO TXT")
+print("*******************************************")
+archivo=open("/workspaces/CursoPython/chavo.txt")
+archivo.close()
