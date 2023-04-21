@@ -1,5 +1,5 @@
 print("*******************************************")
 print("PROGRAMA QUE ABRE, LEE, IMPRIME ARCHIVO TXT")
 print("*******************************************")
-archivo=open("C:\Users\VIVELAB\Downloads\chavo.txt")
+archivo=open("C:\\Users\\VIVELAB\\Downloads\\chavo.txt")
 archivo.close()
