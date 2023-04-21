@@ -1,5 +1,6 @@
 print("*******************************************")
 print("PROGRAMA QUE ABRE, LEE, IMPRIME ARCHIVO TXT")
 print("*******************************************")
-archivo=open("C:\\Users\\VIVELAB\\Downloads\\chavo.txt")
+archivo=open("https://github.com/jequi1992/CursoPython/blob/61441141a9d897ee02ff6c9d9841e2e3e81a7402/chavo.txt")
 archivo.close()
+print("HOLA")
