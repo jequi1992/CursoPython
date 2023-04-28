@@ -1,55 +1,56 @@
-# print("********************************************")
-# print("LISTADO VECINDAD DEL CHAVO")
-# print("********************************************")
+# print("**************************************************")
+# print("***********Operaciones con listas***********")
+# print("***********Creación de Listas***********")
+# print("**************************************************")
 
-# with open("C:\\Users\\VIVELAB\\Downloads\\vecindadchavo.csv","r") as archivo:
-#     print(archivo.read())
+# dias=["Lunes","Martes","Miercoles","Jueves","Viernes"]
+# print(dias)
+# print("**************************************************")
 
 #___________________________________________________________________________________________________________________________________________
 
-while True:
-    print()
-    print("********************************************")
-    print("********  DIRECTORIO PACIENTE      *********")
-    print("********  CLINICA MATASANOS        *********")
-    print("********************************************")
+# print("**************************************************")
+# print("***********Operaciones con listas***********")
+# print("***********Creación de Listas***********")
+# print("**************************************************")
 
-    print("1. Registrar Paciente \n2. Listar Pacientes \n3. Salir")
-    print("--------------------------------------------")
+# lista=[]
+# i=1
+# Cantidad=int(input("Ingrese la cantidad de numeros a ingresar: "))
+# while i<=Cantidad:
+#     num=int(input("Ingrese Numero "+str(i)+": "))
+#     lista.append(num)
+#     i+=1
 
-    op=int(input("Ingrese Opción: "))
+# print("**************************")
+# print("La lista creada es: ",lista)
+# print("**************************")
 
-    if op==1:
-        print("********************************************")
-        print("********  DIRECTORIO PACIENTE      *********")
-        print("********  CLINICA MATASANOS        *********")
-        print("********************************************")
-        
-        numdoc=input("Ingrese el número de documento: ")
-        nompac=input("Ingrese el nombre del paciente: ")
-        numcon=input("Ingrese el número de contacto: ")
-        edadpac=input("Ingrese edad del paciente: ")
+# for i in lista:
+#     print(i)
 
-        with open("C:\\Users\\VIVELAB\\Downloads\\pacientes.csv","a") as archivo:
-            archivo.write('\n'+numdoc+';'+nompac+';'+numcon+';'+edadpac)
+# #___________________________________________________________________________________________________________________________________________
 
-    elif op == 2:
+print("*******CREACION LISTAS VACIAS CON FOR*******")
+print("**************************************************")
 
-        print("********************************************")
-        print("********  DIRECTORIO PACIENTE      *********")
-        print("********  CLINICA MATASANOS        *********")
-        print("********************************************")
-        with open("C:\\Users\\VIVELAB\\Downloads\\pacientes.csv","r") as archivo:
-            print(archivo.read())
+departamentos = []
+capitales = []
+tamaño=3
 
-    elif op == 3:
+for i in range(tamaño):
+    print("*******INGRESE DATOS*******")
+    departamento=input("Nombre del Departamento ---> "+str(i+1)+":")
+    capital=input("Nombre del Capital ---> "+str(i+1)+":")
+    departamentos.append(departamento.upper())
+    capitales.append(capital.upper())
+    print("**************************************************")
 
-        print("********************************************")
-        print("**   SELECCIONO SALIR DEL PROGRAMA        **")
-        print("********************************************")
-        break
-    else:
-        print("**   SELECCIONO UNA OPCIÓN VALIDA        **")
+#Mostrar la lista
 
+print("************CONSULTANDO DATOS************")
+print("*****************************************")
 
-    
+for i in range(tamaño):
+    print("CONSULTA -->",i+1)
+    print("DEPARTAMENTO: ", departamentos[i]+" ---> CAPITAL: "+capitales[i])
