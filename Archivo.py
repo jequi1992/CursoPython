@@ -31,26 +31,49 @@
 
 # #___________________________________________________________________________________________________________________________________________
 
-print("*******CREACION LISTAS VACIAS CON FOR*******")
-print("**************************************************")
+# print("*******CREACION LISTAS VACIAS CON FOR*******")
+# print("**************************************************")
 
-departamentos = []
-capitales = []
-tamaño=3
+# departamentos = []
+# capitales = []
+# tamaño=3
+
+# for i in range(tamaño):
+#     print("*******INGRESE DATOS*******")
+#     departamento=input("Nombre del Departamento ---> "+str(i+1)+":")
+#     capital=input("Nombre del Capital ---> "+str(i+1)+":")
+#     departamentos.append(departamento.upper())
+#     capitales.append(capital.upper())
+#     print("**************************************************")
+
+# #Mostrar la lista
+
+# print("************CONSULTANDO DATOS************")
+# print("*****************************************")
+
+# for i in range(tamaño):
+#     print("CONSULTA -->",i+1)
+#     print("DEPARTAMENTO: ", departamentos[i]+" ---> CAPITAL: "+capitales[i])
+
+# #___________________________________________________________________________________________________________________________________________
+
+print("*******Ejercicio*******")
+print("***********************")
+
+estudiantes=[]
+tamaño = int(input("Cantidad de estudiantes a ingresar: "))
 
 for i in range(tamaño):
-    print("*******INGRESE DATOS*******")
-    departamento=input("Nombre del Departamento ---> "+str(i+1)+":")
-    capital=input("Nombre del Capital ---> "+str(i+1)+":")
-    departamentos.append(departamento.upper())
-    capitales.append(capital.upper())
-    print("**************************************************")
+    print()
+    nomest=input("Ingrese el nombre del estudiante " + str(i+1)+":")
+    estudiantes.append(nomest)
 
-#Mostrar la lista
+pregunta = input("Ingrese el nombre del estudiante a buscar: ")
 
-print("************CONSULTANDO DATOS************")
-print("*****************************************")
+for i in estudiantes:
+    if i==pregunta:
+        print("El estudiante si se encuentra")
 
-for i in range(tamaño):
-    print("CONSULTA -->",i+1)
-    print("DEPARTAMENTO: ", departamentos[i]+" ---> CAPITAL: "+capitales[i])
+print("El estudiante no se encuentra")
+
+print(estudiantes.sort())
